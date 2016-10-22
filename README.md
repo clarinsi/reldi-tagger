@@ -5,8 +5,8 @@
 Python modules:
 
 * sklearn(>=0.15) (necessary only if you want to perform lemmatisation as well)
-* marisa_trie
-* pycrfsuite
+* marisa_trie ()
+* pycrfsuite (https://github.com/tpeng/python-crfsuite)
 
 ## Running the tagger
 
