@@ -19,6 +19,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 
 def tag_sent(sent):
+  #print extract_features_msd(sent,trie)
   return tagger.tag(extract_features_msd(sent,trie))
 
 def tag_lemmatise_sent(sent):
@@ -32,7 +33,7 @@ def get_lemma(token,msd):
   if msd[:2]!='Np':
     for i in range(len(msd)-1):
       for key in lexicon.keys(key[:-(i+1)]):
-        return lexicon[key][0].decode('utf8')
+        return lexicon[keypart][0].decode('utf8')
   return guess_lemma(token,msd)
 
 def guess_lemma(token,msd):
@@ -127,9 +128,9 @@ def load_models(lang,dir=None):
 if __name__=='__main__':
   import argparse
   parser=argparse.ArgumentParser(description='Tagger and lemmatiser for Slovene, Croatian and Serbian')
-  parser.add_argument('lang',help='language of the text',choices=['sl','hr','sr'])
+  parser.add_argument('lang',help='language of the text',choices=['sl','sl.ns','hr','sr'])
   parser.add_argument('-l','--lemmatise',help='perform lemmatisation as well',action='store_true')
-  parser.add_argument('-i','--index',help='index of the column to be processed',type=int,default=0)
+  parser.add_argument('-i','--index',help='index of the column to be processed',type=int,default=1)
   args=parser.parse_args()
   trie=pickle.load(open(os.path.join(reldir,args.lang+'.marisa')))
   tagger=pycrfsuite.Tagger()
