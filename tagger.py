@@ -143,7 +143,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Tagger and lemmatiser for Slovene, Croatian and Serbian')
     parser.add_argument('lang', help='language of the text',
-                        choices=['sl', 'sl.ns', 'hr', 'sr'])
+                        choices=['sl', 'sl.ns', 'sl.ns.true', 'sl.ns.lower', 'hr', 'sr'])
     parser.add_argument(
         '-l', '--lemmatise', help='perform lemmatisation as well', action='store_true')
     parser.add_argument(
