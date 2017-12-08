@@ -218,13 +218,13 @@ if __name__=='__main__':
   trie=pickle.load(open(lang+'.marisa'))
   trainer=pycrfsuite.Trainer(algorithm='pa',verbose=True)
   trainer.set_params({'max_iterations':10})
-  for sent in conll_iter(open(lang+'.conll')):
-    tokens=[e[1] for e in sent]
+  for sent in conll_iter(open(lang+'.train')):
+    tokens=[e[0] for e in sent]
     try:
-      labels=[e[4] for e in sent]
+      labels=[e[1] for e in sent]
     except:
       print tokens
     feats=extract_features_msd(tokens,trie)
-    print tokens,labels,feats
+    #print tokens,labels,feats
     trainer.append(feats,labels)
   trainer.train(lang+'.msd.model')

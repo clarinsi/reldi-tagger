@@ -5,7 +5,7 @@
 Python modules:
 
 * sklearn(>=0.15) (necessary only if you want to perform lemmatisation as well)
-* marisa_trie ()
+* marisa_trie (https://github.com/pytries/marisa-trie)
 * pycrfsuite (https://github.com/tpeng/python-crfsuite)
 
 ## Running the tagger
@@ -65,7 +65,7 @@ As currently we do not disseminate the lemma prediction models (too large for Gi
 
 ### Tagger training data format
 
-The tagger training data should be in the CoNLL format with the token in the second column and the tag in the fifth column.
+The tagger training data should be in the one-token-per-line, empty-line-as-sentence-boundary format, with the token and the tag separated by a tab. An example of the input format can be found in the ```sl.train``` file.
 
 ### Preparing the lexicon trie used by the tagger
 
@@ -83,7 +83,7 @@ $ gunzip -c sloleks-en_v1.2.tbl.gz | cut -f 1,2,3 | ./prepare_marisa.py sl.maris
 
 ### Training the tagger
 
-The only argument given to the script is the language code. In case of Croatian (language code `hr`) the corpus training data is expected to be in the file `hr.conll`, while the lexicon trie is expected to be in the file `hr.marisa`.
+The only argument given to the script is the language code. In case of Croatian (language code `hr`) the corpus training data is expected to be in the file `hr.train`, while the lexicon trie is expected to be in the file `hr.marisa`.
 
 ```
 $ ./train_tagger.py hr
