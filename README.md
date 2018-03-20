@@ -65,20 +65,20 @@ As currently we do not disseminate the lemma prediction models (too large for Gi
 
 ### Tagger training data format
 
-The tagger training data should be in the one-token-per-line, empty-line-as-sentence-boundary format, with the token and the tag separated by a tab. An example of the input format can be found in the ```sl.train``` file.
+The tagger training data should be in the one-token-per-line, empty-line-as-sentence-boundary format, with the token, lemma and the tag separated by a tab. An example of the input format can be found in the ```sl.train``` file.
 
 ### Preparing the lexicon trie used by the tagger
 
 The lexicon trie is used both during training the tagger and during tagging.
 
-The examples below should work out-of-the-box for Croatian and Serbian only as we do not currently distribute the Slovene inflectional lexicon.
+The lexicon file should be formatted in the same manner as the training data, just with no sentence boundaries. Below are commands to be run over the [Croatian](https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1072/hrLex_v1.2.gz), [Serbian](https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1073/srLex_v1.2.gz) and [Slovene lexicon](https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1039/sloleks-en.tbl_v1.2.zip).
 
 ```
-$ gunzip -c ../../lexicons/apertium/apertium-hbs.hbs_HR_purist.mte.gz | cut -f 1,2,3 | ./prepare_marisa.py hr.marisa
+$ gunzip -c hrLex_v1.2.gz | cut -f 1,2,3 | ./prepare_marisa.py hr.marisa
 
-$ gunzip -c ../../lexicons/apertium/apertium-hbs.hbs_SR_purist.mte.gz | cut -f 1,2,3 | ./prepare_marisa.py sr.marisa
+$ gunzip -c srLex_v1.2.gz | cut -f 1,2,3 | ./prepare_marisa.py sr.marisa
 
-$ gunzip -c sloleks-en_v1.2.tbl.gz | cut -f 1,2,3 | ./prepare_marisa.py sl.marisa
+$ cut -f 1,2,3 sloleks-en_v1.2.tbl | ./prepare_marisa.py sl.marisa
 ```
 
 ### Training the tagger
@@ -95,23 +95,18 @@ $ ./train_tagger.py sl
 
 ### Preparing the lexicon for training the lemmatiser
 
+The process of training the lemmatiser is showcased on Slovene. Running corresponding commands for Croatian and Serbian should follow from the previous documentation.
+
 The first step in producing the lexicon for lemmatisation is to calculate the lemma frequency list from the tagger training data. The data in the same format as for training the tagger should be used.
 
 ```
-$ ./lemma_freq.py hr.lemma_freq < hr.conll
-
-$ ./lemma_freq.py sr.lemma_freq < sr.conll
+$ ./lemma_freq.py sl.lemma_freq < sl.train
 ```
 
 The second step produces the lexicon in form of a `marisa_trie.BytesTrie`. The lemma frequency information is used in case of `(token,msd)` pair collisions. Only the most frequent lemma is kept in the lexicon.
 
 ```
-$ gunzip -c ../../lexicons/apertium/apertium-hbs.hbs_HR_purist.mte.gz | cut -f 1,2,3 | ./prepare_lexicon.py hr.lemma_freq hr.lexicon
-
-$ gunzip -c ../../lexicons/apertium/apertium-hbs.hbs_SR_purist.mte.gz | cut -f 1,2,3 | ./prepare_lexicon.py sr.lemma_freq sr.lexicon
-
-$ gunzip -c sloleks-en_v1.2.tbl.gz | cut -f 1,2,3 | ./prepare_lexicon.py sl.lemma_freq sl.lexicon
-
+$ cut -f 1,2,3 sloleks-en_v1.2.tbl | ./prepare_lexicon.py sl.lemma_freq sl.lexicon
 ```
 
 ### Training the lemmatiser
@@ -121,10 +116,5 @@ The lemmatiser of unknown words is trained on the lexicon prepared in the previo
 The output of the lemmatiser learning process is a file with the `.lexicon.guesser` suffix.
 
 ```
-$ ./train_lemmatiser.py hr.lexicon
-
-$ ./train_lemmatiser.py sr.lexicon
-
 $ ./train_lemmatiser.py sl.lexicon
 ```
-

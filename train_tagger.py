@@ -221,7 +221,7 @@ if __name__=='__main__':
   for sent in conll_iter(open(lang+'.train')):
     tokens=[e[0] for e in sent]
     try:
-      labels=[e[1] for e in sent]
+      labels=[e[2] for e in sent]
     except:
       print tokens
     feats=extract_features_msd(tokens,trie)

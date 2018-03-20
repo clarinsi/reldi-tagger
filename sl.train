@@ -1,34 +1,398 @@
-"	Z
-Tistega	Pd-msg
-večera	Ncmsg
-sem	Va-r1s-n
-preveč	Rgp
-popil	Vmep-sm
-,	Z
-zgodilo	Vmep-sn
-se	Px------y
-je	Va-r3s-n
-mesec	Ncmsan
-dni	Ncmpg
-po	Sl
-tem	Pd-nsl
-,	Z
-ko	Cs
-sem	Va-r1s-n
-izvedel	Vmep-sm
-,	Z
-da	Cs
-me	Pp1-sa--y
-žena	Ncfsn
-vara	Vmpr3s
-.	Z
+"	-	Z
+Tistega	tisti	Pd-msg
+večera	večer	Ncmsg
+sem	biti	Va-r1s-n
+preveč	preveč	Rgp
+popil	popiti	Vmep-sm
+,	-	Z
+zgodilo	zgoditi	Vmep-sn
+se	se	Px------y
+je	biti	Va-r3s-n
+mesec	mesec	Ncmsan
+dni	dan	Ncmpg
+po	po	Sl
+tem	ta	Pd-nsl
+,	-	Z
+ko	ko	Cs
+sem	biti	Va-r1s-n
+izvedel	izvedeti	Vmep-sm
+,	-	Z
+da	da	Cs
+me	jaz	Pp1-sa--y
+žena	žena	Ncfsn
+vara	varati	Vmpr3s
+.	-	Z
 
-Dogodek	Ncmsn
-v	Sl
-Ankaranu	Npmsl
-je	Va-r3s-n
-bila	Va-p-sf
-dramatična	Agpfsn
-nesreča	Ncfsn
-.	Z
+Dogodek	dogodek	Ncmsn
+v	v	Sl
+Ankaranu	Ankaran	Npmsl
+je	biti	Va-r3s-n
+bila	biti	Va-p-sf
+dramatična	dramatičen	Agpfsn
+nesreča	nesreča	Ncfsn
+.	-	Z
+
+Dekle	dekle	Ncnsn
+je	biti	Va-r3s-n
+ob	ob	Sl
+vzvratni	vzvraten	Agpfsl
+vožnji	vožnja	Ncfsl
+začelo	začeti	Vmep-sn
+vpiti	vpiti	Vmbn
+,	-	Z
+da	da	Cs
+bi	biti	Va-c
+jo	on	Pp3fsa--y
+utišal	utišati	Vmep-sm
+,	-	Z
+sem	biti	Va-r1s-n
+prijel	prijeti	Vmep-sm
+nož	nož	Ncmsan
+.	-	Z
+
+Prišlo	priti	Vmep-sn
+je	biti	Va-r3s-n
+do	do	Sg
+prerivanja	prerivanje	Ncnsg
+in	in	Cc
+umrla	umreti	Vmep-sf
+je	biti	Va-r3s-n
+.	-	Z
+
+Tega	ta	Pd-nsg
+se	se	Px------y
+sploh	sploh	Q
+nisem	biti	Va-r1s-y
+zavedel	zavesti	Vmep-sm
+.	-	Z
+
+Kaj	kaj	Pq-nsn
+se	se	Px------y
+je	biti	Va-r3s-n
+zgodilo	zgoditi	Vmep-sn
+,	-	Z
+sem	biti	Va-r1s-n
+izvedel	izvedeti	Vmep-sm
+šele	šele	Q
+naslednjega	naslednji	Agpmsg
+dne	dan	Ncmsg
+iz	iz	Sg
+časopisja	časopisje	Ncnsg
+,	-	Z
+"	-	Z
+je	biti	Va-r3s-n
+v	v	Sa
+intervju	intervju	Ncmsan
+za	za	Sa
+Stampo	Stampa	Npfsa
+iz	iz	Sg
+Torina	Torino	Npmsg
+izjavil	izjaviti	Vmep-sm
+morilec	morilec	Ncmsn
+.	-	Z
+
+Preiskave	preiskava	Ncfpn
+med	med	Si
+sodnim	soden	Agpmsi
+postopkom	postopek	Ncmsi
+so	biti	Va-r3p-n
+pokazale	pokazati	Vmep-pf
+,	-	Z
+da	da	Cs
+so	biti	Va-r3p-n
+se	se	Px------y
+dogodki	dogodek	Ncmpn
+odvijali	odvijati	Vmpp-pm
+bistveno	bistveno	Rgp
+drugače	drugače	Rgp
+.	-	Z
+
+Dogodki	dogodek	Ncmpn
+v	v	Sl
+prihodnjih	prihodnji	Agpmpl
+mesecih	mesec	Ncmpl
+pa	pa	Cc
+bodo	biti	Va-f3p-n
+pokazali	pokazati	Vmep-pm
+,	-	Z
+ali	ali	Rgp
+bo	biti	Va-f3s-n
+morilcu	morilec	Ncmsd
+iz	iz	Sg
+Ankarana	Ankaran	Npmsg
+tokrat	tokrat	Rgp
+uspelo	uspeti	Vmep-sn
+prepričati	prepričati	Vmen
+italijanske	italijanski	Agpfpa
+pravosodne	pravosoden	Agpfpa
+oblasti	oblast	Ncfpa
+.	-	Z
+
+V	v	Sl
+bolnišnici	bolnišnica	Ncfsl
+bodo	biti	Va-f3p-n
+uvedli	uvesti	Vmep-pm
+tudi	tudi	Q
+s	z	Si
+šolo	šola	Ncfsi
+za	za	Sa
+starše	starš	Ncmpa
+,	-	Z
+ki	ki	Cs
+je	biti	Va-r3s-n
+namenjena	namenjen	Appfsn
+vzgoji	vzgoja	Ncfsd
+in	in	Cc
+izobraževanju	izobraževanje	Ncnsd
+nosečnic	nosečnica	Ncfpg
+in	in	Cc
+njihovih	njihov	Ps3mpgp
+partnerjev	partner	Ncmpg
+.	-	Z
+
+V	v	Sl
+bolnišnici	bolnišnica	Ncfsl
+so	biti	Va-r3p-n
+že	že	Q
+pred	pred	Si
+časom	čas	Ncmsi
+pripravili	pripraviti	Vmep-pm
+vse	ves	Pg-nsa
+potrebno	potreben	Agpnsa
+za	za	Sa
+negovanje	negovanje	Ncnsa
+bolnikov	bolnik	Ncmpg
+,	-	Z
+pri	pri	Sl
+katerih	kateri	Pq-mpl
+je	biti	Va-r3s-n
+bilo	biti	Va-p-sn
+zdravljenje	zdravljenje	Ncnsn
+končano	končan	Appnsn
+.	-	Z
+
+Začetek	začetek	Ncmsn
+izvajanja	izvajanje	Ncnsg
+programa	program	Ncmsg
+je	biti	Va-r3s-n
+odvisen	odvisen	Agpmsnn
+od	od	Sg
+podpisa	podpis	Ncmsg
+sporazuma	sporazum	Ncmsg
+z	z	Si
+republiškim	republiški	Agpmsi
+zavodom	zavod	Ncmsi
+za	za	Sa
+zdravstveno	zdravstven	Agpnsa
+zavarovanje	zavarovanje	Ncnsa
+,	-	Z
+po	po	Sl
+napovedih	napoved	Ncfpl
+pa	pa	Cc
+bi	biti	Va-c
+se	se	Px------y
+naj	naj	Q
+to	ta	Pd-nsn
+zgodilo	zgoditi	Vmep-sn
+prihodnji	prihodnji	Agpmsay
+mesec	mesec	Ncmsan
+.	-	Z
+
+Piran	Piran	Npmsn
+-	-	Z
+Čeprav	čeprav	Cs
+je	biti	Va-r3s-n
+vodstvu	vodstvo	Ncnsd
+piranske	piranski	Agpfsg
+občine	občina	Ncfsg
+jasno	jasen	Agpnsn
+,	-	Z
+da	da	Cs
+je	biti	Va-r3s-n
+problem	problem	Ncmsn
+beguncev	begunec	Ncmpg
+,	-	Z
+ki	ki	Cs
+jih	on	Pp3mpa--y
+je	biti	Va-r3s-n
+slovenska	slovenski	Agpfsn
+oblast	oblast	Ncfsn
+evakuirala	evakuirati	Vmbp-sf
+iz	iz	Sg
+obleganega	oblegan	Appnsg
+Sarajeva	Sarajevo	Npnsg
+,	-	Z
+predvsem	predvsem	Q
+stvar	stvar	Ncfsn
+države	država	Ncfsg
+,	-	Z
+se	se	Px------y
+je	biti	Va-r3s-n
+ob	ob	Sl
+zadnjih	zadnji	Agpmpl
+zapletih	zaplet	Ncmpl
+županja	županja	Ncfsn
+Vojka	Vojka	Npfsn
+Štular	Štular	Npfsn
+odločila	odločiti	Vmep-sf
+,	-	Z
+da	da	Cs
+jim	on	Pp3mpd--y
+bo	biti	Va-f3s-n
+občina	občina	Ncfsn
+po	po	Sl
+svojih	svoj	Px-fpl
+močeh	moč	Ncfpl
+pomagala	pomagati	Vmbp-sf
+.	-	Z
+
+Zato	zato	Cc
+je	biti	Va-r3s-n
+včeraj	včeraj	Rgp
+sklicala	sklicati	Vmep-sf
+sestanek	sestanek	Ncmsan
+,	-	Z
+na	na	Sl
+katerem	kateri	Pq-msl
+so	biti	Va-r3p-n
+ugotavljali	ugotavljati	Vmpp-pm
+,	-	Z
+kako	kako	Rgp
+bi	biti	Va-c
+prišli	priti	Vmep-pm
+do	do	Sg
+najprimernejše	primeren	Agsfsg
+rešitve	rešitev	Ncfsg
+.	-	Z
+
+Kar	kar	Pr-nsn
+zadeva	zadevati	Vmpr3s
+podočnjake	podočnjak	Ncmpa
+,	-	Z
+je	biti	Va-r3s-n
+stvar	stvar	Ncfsn
+malce	malce	Rgp
+bolj	bolj	Rgc
+zapletena	zapleten	Agpfsn
+.	-	Z
+
+Lahko	lahko	Rgp
+so	biti	Va-r3p-n
+posledica	posledica	Ncfsn
+vnetja	vnetje	Ncnsg
+vek	veka	Ncfpg
+,	-	Z
+ki	ki	Cs
+je	biti	Va-r3s-n
+pogosto	pogost	Agpnsn
+pri	pri	Sl
+ljudeh	človek	Ncmpl
+,	-	Z
+ki	ki	Cs
+trpijo	trpeti	Vmpr3p
+za	za	Si
+alergijami	alergija	Ncfpi
+,	-	Z
+lahko	lahko	Rgp
+so	biti	Va-r3p-n
+posledica	posledica	Ncfsn
+vnetja	vnetje	Ncnsg
+veznic	veznica	Ncfpg
+,	-	Z
+dehidracije	dehidracija	Ncfsg
+,	-	Z
+stresa	stres	Ncmsg
+,	-	Z
+preutrujenosti	preutrujenost	Ncfsg
+…	-	Z
+
+Najprej	najprej	Rgs
+je	biti	Va-r3s-n
+treba	treba	Rgp
+najti	najti	Vmen
+vzrok	vzrok	Ncmsan
+,	-	Z
+zaradi	zaradi	Sg
+katerega	kateri	Pq-msg
+so	biti	Va-r3p-n
+se	se	Px------y
+pojavili	pojaviti	Vmep-pm
+.	-	Z
+
+Včasih	včasih	Rgp
+so	biti	Va-r3p-n
+podočnjaki	podočnjak	Ncmpn
+tudi	tudi	Q
+posledica	posledica	Ncfsn
+tanke	tanek	Agpfsg
+kože	koža	Ncfsg
+.	-	Z
+
+-	-	Z
+Spoznajo	spoznati	Vmbr3p
+osnovne	osnoven	Agpfpa
+značilnosti	značilnost	Ncfpa
+bolezni	bolezen	Ncfsg
+:	-	Z
+kaj	kaj	Pq-nsn
+je	biti	Va-r3s-n
+astma	astma	Ncfsn
+in	in	Cc
+kako	kako	Rgp
+poteka	potekati	Vmpr3s
+.	-	Z
+
+Depresivna	depresiven	Agpfsn
+motnja	motnja	Ncfsn
+se	se	Px------y
+lahko	lahko	Rgp
+ponavlja	ponavljati	Vmpr3s
+,	-	Z
+v	v	Sl
+takšnih	takšen	Pd-mpl
+primerih	primer	Ncmpl
+govorimo	govoriti	Vmpr1p
+o	o	Sl
+ponavljajoči	ponavljajoč	Appfsl
+se	se	Px------y
+depresivni	depresiven	Agpfsl
+motnji	motnja	Ncfsl
+,	-	Z
+ali	ali	Cc
+pa	pa	Cc
+poteka	potekati	Vmpr3s
+kot	kot	Cs
+bipolarna	bipolaren	Agpfsn
+motnja	motnja	Ncfsn
+,	-	Z
+pri	pri	Sl
+kateri	kateri	Pq-fsl
+se	se	Px------y
+obdobja	obdobje	Ncnpn
+depresije	depresija	Ncfsg
+izmenjavajo	izmenjavati	Vmpr3p
+z	z	Si
+obdobji	obdobje	Ncnpi
+pretirane	pretiran	Appfsg
+veselosti	veselost	Ncfsg
+.	-	Z
+
+Holistični	holističen	Agpmsny
+pristop	pristop	Ncmsn
+k	k	Sd
+zdravljenju	zdravljenje	Ncnsd
+,	-	Z
+ki	ki	Cs
+so	biti	Va-r3p-n
+ga	on	Pp3msa--y
+zagovarjali	zagovarjati	Vmpp-pm
+vsi	ves	Pg-mpn
+predavatelji	predavatelj	Ncmpn
+,	-	Z
+pomeni	pomeniti	Vmbr3s
+predvsem	predvsem	Q
+ukvarjanje	ukvarjanje	Ncnsa
+s	z	Si
+sabo	se	Px---i
+.	-	Z
 
