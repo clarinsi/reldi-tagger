@@ -59,6 +59,31 @@ $ echo 'Moj alat radi dobro.' | ../tokeniser/tokeniser.py hr | ./tagger.py hr -l
 1.1.5.20-20	.	Z	.
 ```
 
+### Converting the output to XML / TEI
+
+For those that prefer to use XML, in particular TEI, instead of the tabular format we
+provide a Perl script for this conversion.
+If we asume the above output is stored in `tst.tbl`:
+
+
+```
+$ tag2tei.pl < tst.tbl
+<body xmlns="http://www.tei-c.org/ns/1.0" xml:lang="sl">
+<p>
+<s>
+<w lemma="moj" ana="mte:Ps1msn">Moj</w>
+<c> </c><w lemma="alat" ana="mte:Ncmsn">alat</w>
+<c> </c><w lemma="raditi" ana="mte:Vmr3s">radi</w>
+<c> </c><w lemma="dobro" ana="mte:Rgp">dobro</w>
+<pc ana="mte:Z">.</pc>
+</s>
+</p>
+</body>
+```
+
+For simplicity we do not use parameters with the script, but certain variables can be modified inside it,
+in particular the value of `body/@xml:lang`, which tokens to treat as punctuation, and the prefix of `@ana`.
+
 ## Training your own models
 
 As currently we do not disseminate the lemma prediction models (too large for GitHub), if you want to have lemma prediction models based on the latest version of the lexicon (later than 2016-03-23), you should train your own model. Models for tagging and lexicon files for lemmatisation of know words are included in this distribution.
