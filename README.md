@@ -8,6 +8,42 @@ Python modules:
 * marisa_trie (https://github.com/pytries/marisa-trie)
 * pycrfsuite (https://github.com/tpeng/python-crfsuite)
 
+## Citing the tagger
+
+If you use the Slovene model of the tagger or train the tagger on different data, you should cite:
+
+```
+@InProceedings{ljubesic16b-corpus,
+  author = {Nikola Ljubešić and Tomaž Erjavec},
+  title = {Corpus vs. Lexicon Supervision in Morphosyntactic Tagging: the Case of Slovene},
+  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+  year = {2016},
+  date = {23-28},
+  location = {Portorož, Slovenia},
+  editor = {Nicoletta Calzolari (Conference Chair) and Khalid Choukri and Thierry Declerck and Sara Goggi and Marko Grobelnik and Bente Maegaard and Joseph Mariani and Helene Mazo and Asuncion Moreno and Jan Odijk and Stelios Piperidis},
+  publisher = {European Language Resources Association (ELRA)},
+  address = {Paris, France},
+  isbn = {978-2-9517408-9-1}
+ }
+```
+
+If you use the Croatian or Serbian models, please cite:
+
+```
+@InProceedings{ljubesic16-new,
+  author = {Nikola Ljubešić and Filip Klubička and Željko Agić and Ivo-Pavao Jazbec},
+  title = {New Inflectional Lexicons and Training Corpora for Improved Morphosyntactic Annotation of Croatian and Serbian},
+  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+  year = {2016},
+  date = {23-28},
+  location = {Portorož, Slovenia},
+  editor = {Nicoletta Calzolari (Conference Chair) and Khalid Choukri and Thierry Declerck and Sara Goggi and Marko Grobelnik and Bente Maegaard and Joseph Mariani and Helene Mazo and Asuncion Moreno and Jan Odijk and Stelios Piperidis},
+  publisher = {European Language Resources Association (ELRA)},
+  address = {Paris, France},
+  isbn = {978-2-9517408-9-1}
+ }
+```
+
 ## Running the tagger
 
 If you have all the files in place for tagging (for Croatian `hr.msd.model` and `hr.marisa`), you can run the tagger like this:
