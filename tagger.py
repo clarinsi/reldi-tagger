@@ -77,7 +77,8 @@ def read_and_write(istream, index, ostream):
     entry_list = []
     sents = []
     for line in istream:
-        if line.strip() == '':
+        line0 = line.strip()
+        if len(line0) == 0:
             totag = []
             for token in [e[index] for e in entry_list]:
                 if ' ' in token:
@@ -100,6 +101,7 @@ def read_and_write(istream, index, ostream):
                     else:
                         tags_proper.append(tags[tag_counter])
                         tag_counter += 1
+                ostream.write('# text = ' + ' '.join([word for num, word in entry_list]) + '\n')
                 ostream.write(u''.join(['\t'.join(
                     entry) + '\t' + tag + '\n' for entry, tag in zip(entry_list, tags_proper)]) + '\n')
             else:
@@ -119,11 +121,15 @@ def read_and_write(istream, index, ostream):
                     else:
                         tags_proper.append(tags[tag_counter])
                         tag_counter += 1
+                ostream.write('# text = ' + ' '.join([word for num, word in entry_list]) + '\n')
                 ostream.write(''.join(['\t'.join(entry) + '\t' + tag[0] + '\t' + tag[
                               1] + '\n' for entry, tag in zip(entry_list, tags_proper)]) + '\n')
             entry_list = []
         else:
-            entry_list.append(line[:-1].decode('utf8').split('\t'))
+            if line0.startswith('#'):
+                ostream.write(line.decode('utf8'))
+            else:
+                entry_list.append(line[:-1].decode('utf8').split('\t'))
 
 
 def load_models(lang, dir=None):
